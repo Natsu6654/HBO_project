@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesion</title>
+    <link rel="stylesheet" href="{% static 'styleisr.css' %}">
+</head>
+<body>
+    <div>
+        <img src="{% static 'Preview1.png' %}" id="logo">
+    </div>
+
+    <div>
+        <form method="post">
+            {% csrf_token %}
+            <div id="forminicio">
+                <div class="grupo-form">
+                    <input type="email" id="correo" name="correo" placeholder="Correo">
+                    <br>
+                    <br>
+                    <input type="password" id="contrasena" name="contrasena" placeholder="contraseña">
+                    <br>
+                </div>
+                <br>
+                <button type="submit">Iniciar Sesión</button>
+            </div>
+        </form>
+        {% if show_error_message %}
+            <p style="color: red;">Correo o contraseña incorrectos.</p>
+        {% endif %}
+    </div>
+    <a href="/registrarsemt">No tienes una cuenta? Registrate aqui</a>
+</body>
+<footer>
+    <p>&copy; 2024 HBOMAX. Todos los derechos reservados.</p>
+</footer>
+
+</html>

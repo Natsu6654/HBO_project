@@ -1,0 +1,116 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    background: url(fondoc.png)
+}
+
+#logo{
+    margin-left: 10px;
+    width: 400px;
+    height: 30px;
+}
+
+#navbar{
+    width: 100%;
+    height: 10vh;
+    background: url(fondo_2.png);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    filter: brightness(1.1), invert(1);
+    mix-blend-mode: multiply;
+    margin-left: 10px;
+    width: 400px;
+    height: 30px;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    gap: 20px;
+    width: 100%; 
+    height: 100%;
+    max-width: 1200px; 
+}
+
+/* Estilos del formulario de consulta */
+.form-container {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    flex: 2; 
+    width: 100%;
+    height: 70vh;
+}
+
+.history-container {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    flex: 1; 
+    width: 100%;
+    height: 70vh;
+}
+
+.form-container h2, .history-container h2 {
+    margin-top: 0;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 4px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #740fa3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Historial de consultas */
+.history-item {
+    padding: 15px;
+    margin-top: 10px;
+    background-color: #e9e9e9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.history-item:hover {
+    background-color: #ddd;
+}

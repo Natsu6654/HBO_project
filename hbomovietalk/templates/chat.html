@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat de Consulta</title>
+    <link rel="stylesheet" href="{% static 'stylechat.css' %}">
+
+</head>
+<body>
+
+    <div class="navbar">
+        <img src="{% static 'logosf2.png' %}" id="logo">
+    </div>
+
+    <div class="chat-container">
+        <h2>Chat  {{ consulta.titulo }}</h2>
+
+        <div class="messages" id="messages">
+            <!-- Los mensajes del chat se agregarán aquí -->
+        </div>
+
+        <div class="input-container">
+            <input type="text" id="messageInput" placeholder="Escribe tu mensaje..." />
+            <button id="sendButton">Enviar</button>
+        </div>
+    </div>
+
+    <script>
+        // Enviar mensaje al hacer clic en el botón
+        document.getElementById('sendButton').addEventListener('click', function() {
+            var messageInput = document.getElementById('messageInput');
+            var messageText = messageInput.value.trim();
+
+            if (messageText) {
+                var messageElement = document.createElement('div');
+                messageElement.classList.add('message');
+                messageElement.classList.add('own');
+                messageElement.innerHTML = `<div class="text">${messageText}</div>`;
+                
+                // Añadir el mensaje al contenedor de mensajes
+                document.getElementById('messages').appendChild(messageElement);
+
+                // Limpiar el input
+                messageInput.value = '';
+                
+                // Hacer que el contenedor de mensajes se desplace al final
+                document.getElementById('messages').scrollTop = document.getElementById('messages').scrollHeight;
+            }
+        });
+    </script>
+
+</body>
+</html>

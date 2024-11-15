@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrate</title>
+    <link rel="stylesheet" href="{% static 'styleisr.css' %}">
+</head>
+<body>
+    <div>
+        <img src="{% static 'Preview1.png' %}" id="logo">
+    </div>
+
+    <div>
+        <form method="post">
+            {% csrf_token %}
+            <div id="formregistro">
+                <div class="grupo-form">
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+                    <br>
+                    <input type="email" id="correo" name="correo" placeholder="Correo">
+                    <br>
+                    <input type="password" id="contrasena" name="contrasena" placeholder="contraseña">
+                    <br>
+                </div>
+                <br>
+                <button type="submit">Registrate</button>
+            </div>
+        </form>
+    </div>
+    <a href="/iniciarsesionmt">Tienes una cuenta? Inicia sesion</a>
+</body>
+<footer>
+    <p>&copy; 2024 HBOMAX. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>

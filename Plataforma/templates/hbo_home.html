@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="es">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBO Max Replica</title>
+    <link rel="stylesheet" href="{% static 'hbo_style_home.css' %}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="{% static 'img/logoo.png' %}" alt="Logo HBO" style="filter: invert(1);">
+        </div>
+        <ul class="menu">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Serie</a></li>
+            <li><a href="#">Películas</a></li>
+            <li><a href="#">HBO</a></li>
+            <li><a href="#">Niños y Familia</a></li>
+            <li><a href="#">TNT Sports</a></li>
+        </ul>
+        <div class="icons">
+            <span class="icon">🔍</span>
+            <span class="icon">👤</span>
+        </div>
+    </nav>
+
+    <!-- Content Section -->
+    <main class="content">
+        <section class="section">
+            <h2>Solo para ti</h2>
+            <div id="carousel1" style="display: flex; flex-direction: row; gap: 15px;">
+                <div class="card"><img src="{% static 'img/batman.png' %}" alt="Batman"></div>
+                <div class="card"><img src="{% static 'img/conjuro.jpg' %}" alt="El Conjuro"></div>
+                <div class="card"><img src="{% static 'img/IT.jpg' %}" alt="IT"></div>
+                <div class="card"><img src="{% static 'img/suicide.jpg' %}" alt="Suicide Squad"></div>
+                <div class="card"><img src="{% static 'img/Novia.jpg' %}" alt="La Novia Cadáver"></div>
+                <div class="card"><img src="{% static 'img/rick.jpg' %}" alt="Rick and Morty"></div>
+            </div>
+        </section>
+        <section class="section">
+            <h2>Continuar viendo</h2>
+            <div class="carousel" style="display: flex; flex-direction: row; gap: 15px;">
+                <div class="card">
+                    <img src="{% static 'img/niños.png' %}" alt="Son Como Niños">
+                    <div class="overlay-icons">
+                        <span class="play-icon">▶</span>
+                        <span class="more-icon">⋮</span>
+                    </div>
+                    <p>Son como Niños</p>
+                </div>
+                <div class="card">
+                    <img src="{% static 'img/Monja.jpg' %}" alt="La Monja">
+                    <div class="overlay-icons">
+                        <span class="play-icon">▶</span>
+                        <span class="more-icon">⋮</span>
+                    </div>
+                    <p>La Monja 2</p>
+                </div>
+                <div class="card">
+                    <img src="{% static 'img/Fredy.jpg' %}" alt="Five Nights at Freddy's">
+                    <div class="overlay-icons">
+                        <span class="play-icon">▶</span>
+                        <span class="more-icon">⋮</span>
+                    </div>
+                    <p>Five Nights at Freddy's</p>
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="section">
+            <h2>Recomendados</h2>
+            <div class="carousel" style="display: flex; flex-direction: row; gap: 15px;">
+                <div class="card"><img src="{% static 'img/Bad_boy.jpg' %}" alt="Bad Boy"></div>
+                <div class="card"><img src="{% static 'img/aquaman.jpg' %}" alt="Aquaman" height="225px"></div>
+                <div class="card"><img src="{% static 'img/Megalodon.jpg' %}" alt="Megalodon" height="223px"></div>
+                <div class="card"><img src="{% static 'img/shazam.png' %}" alt="shazam"></div>
+                <div class="card"><img src="{% static 'img/guason.jpg' %}" alt="Guason" height="223px"></div>
+                <div class="card"><img src="{% static 'img/Matrix.png' %}" alt="Matrix" height="225px"></div>
+            </div>
+        </section>    
+        <section class="october-section">
+            <div class="october-highlight">
+                <div id="background-overlay">
+                    
+                </div> <!-- Fondo del vidrio roto -->
+                <h2 class="october-title">OCTUBRE <br><span class="sub-title">SIN DORMIR</span></h2>
+                <p class="collection-text">Hits de Halloween que te mantendrán despierto toda la noche.</p>
+                <button class="explore-button">Explorar más</button>
+            </div>
+        
+            <div class="october-carousel">
+                <div class="october-card">
+                    <img src="{% static 'img/ecos.png' %}" alt="Ecos de un crimen">
+                </div>
+                <div class="october-card">
+                    <img src="{% static 'img/malig.png' %}" alt="Malignant">
+                </div>
+                <div class="october-card">
+                    <img src="{% static 'img/visit.png' %}" alt="The Visit">
+                </div>
+                <div class="october-card">
+                    <img src="{% static 'img/IT.jpg' %}" alt="IT">
+                </div>
+                <div class="october-card">
+                    <img src="{% static 'img/exo.png' %}" alt="The Exorcist">
+                </div>
+                <div class="october-card">
+                    <img src="{% static 'img/conjuro.jpg' %}" alt="El Conjuro">
+                </div>
+                <div class="october-card">
+                    <img src="{% static 'img/polter.png' %}" alt="Poltergeist ">
+                </div>
+            </div>
+        </section> 
+    </main>
+</body>
+<footer style="text-align: center; position: relative; width: 100%;">
+    <p>&copy; 2024 HBOMAX. Todos los derechos reservados <a href="/servicio" style="margin-left:15px; text-decoration: none; color: #ccc;">Servicio al cliente</a></p>
+</footer>
+</html>

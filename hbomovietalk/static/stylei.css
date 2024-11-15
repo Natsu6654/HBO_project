@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+}
+
+#navbar{
+    width: 100%;
+    height: 10vh;
+    background: url(fondo_2.png);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    filter: brightness(1.1), invert(1);
+    mix-blend-mode: multiply;
+    margin-left: 10px;
+    width: 400px;
+    height: 30px;
+}
+
+
+.links{
+    margin-right: 20px;
+    align-content: center;
+}
+
+.links a{
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    margin-right: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+
+#baner {
+    background-image: url(fondo5.png);
+    background-size: cover;
+    background-position: center;
+    height: 74vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+    padding: 20px;
+    color: white;
+    background-color: #333;
+}
+
+.palabras *{
+    justify-content: center;
+}
+
+.palabras p{
+    color: white;
+    font-size: 2.8em; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.palabras button{
+    width: 250px; 
+    height: 70px; 
+    margin: 10px 0; 
+    color: white;
+    border: none; 
+    border-radius: 25px; 
+    font-size: 30px; 
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, black, #5816BD);
+}
+
+.palabras button a{
+    text-decoration: none;
+    color: white;
+}
+
+footer{
+    background: url(fondo_2.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#7a1180;
+    color: #ccc;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 10.5vh;
+}

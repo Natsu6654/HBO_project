@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    background: url(fondoc.png);
+}
+
+#logo{
+    filter: invert(1);
+    margin-left: 10px;
+    width: 400px;
+    height: 30px;
+}
+
+#navbar{
+    width: 100%;
+    height: 10vh;
+    background: url(fondo_2.png);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.chat-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #be4cf3;
+    border-radius: 10px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.messages {
+    flex: 1;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+}
+
+.message {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.message.other {
+    justify-content: flex-start;
+}
+
+.message .text {
+    background-color: #dcf8c6;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+}
+
+.message.other .text {
+    background-color: #fff;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+.input-container input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    width: calc(100% - 100px); /* Adjusts width to fit nicely with the button */
+}
+
+.input-container button {
+padding: 10px 20px;
+background-color: #740fa3;
+color: white;
+border: none;
+border-radius: 20px;
+cursor: pointer;
+width: 80px; 
+text-align: center;
+line-height: 20px; 
+}
+.input-container button:hover {
+background-color: #480c70;
+}
